@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sofa_comm/sofa_comm.iml" filepath="$PROJECT_DIR$/sofa_comm/sofa_comm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sofa_consumer/sofa_consumer.iml" filepath="$PROJECT_DIR$/sofa_consumer/sofa_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sofa_provider/sofa_provider.iml" filepath="$PROJECT_DIR$/sofa_provider/sofa_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sofademo-parent.iml" filepath="$PROJECT_DIR$/sofademo-parent.iml" />
+    </modules>
+  </component>
+</project>
