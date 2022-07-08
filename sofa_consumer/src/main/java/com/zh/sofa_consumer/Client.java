@@ -3,6 +3,7 @@ package com.zh.sofa_consumer;
 import com.alipay.sofa.runtime.api.annotation.SofaReference;
 import com.alipay.sofa.runtime.api.annotation.SofaReferenceBinding;
 import com.zh.sofa_provider.pojo.User;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -49,9 +50,9 @@ public class Client {
         }
     }
     @RequestMapping("/insert")
-    public String insert() {
+    public String insert(@Param("name") String name, @Param("age")int age,@Param("email") String email) {
         try {
-            providservice.InsertUser("zhaohang",999,"1053972626@qq.com");
+            providservice.InsertUser(name,age,email);
             return "Finish";
         }catch (Exception e){
             e.printStackTrace();
