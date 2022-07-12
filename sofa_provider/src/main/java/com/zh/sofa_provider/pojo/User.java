@@ -1,9 +1,10 @@
 package com.zh.sofa_provider.pojo;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.Version;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
+
 import java.io.Serializable;
+import java.util.Date;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.stereotype.Component;
@@ -32,17 +33,25 @@ public class User implements Serializable {
     /**
      * 姓名
      */
+    //@TableField(fill = FieldFill.INSERT)  //执行插入时自动填充
     private String name;
 
     /**
      * 年龄
      */
+    //@TableField(fill = FieldFill.INSERT)  //执行插入时自动填充
     private Integer age;
 
     /**
      * 邮箱
      */
+    //@TableField(fill = FieldFill.INSERT)  //执行插入时自动填充
     private String email;
 
+    @TableField(value = "update_time",fill = FieldFill.INSERT_UPDATE)  //执行插入时自动填充
+    private Date updateTime;
+
+    @TableField(value = "create_time",fill = FieldFill.INSERT)  //执行插入时自动填充
+    private Date createTime;
 
 }

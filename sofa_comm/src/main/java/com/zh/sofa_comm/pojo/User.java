@@ -1,10 +1,15 @@
 package com.zh.sofa_comm.pojo;
 
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * <p>
@@ -23,7 +28,7 @@ public class User implements Serializable {
     /**
      * 主键ID
      */
-
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     /**
@@ -41,5 +46,10 @@ public class User implements Serializable {
      */
     private String email;
 
+    @TableField(value = "update_time",fill = FieldFill.INSERT_UPDATE)  //执行插入和更新时自动填充
+    private Date updateTime;
+
+    @TableField(value = "create_time",fill = FieldFill.INSERT)  //执行插入时自动填充
+    private Date createTime;
 
 }

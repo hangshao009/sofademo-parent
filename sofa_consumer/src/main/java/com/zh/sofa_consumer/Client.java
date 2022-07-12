@@ -5,13 +5,16 @@ import com.alipay.sofa.runtime.api.annotation.SofaReferenceBinding;
 import com.zh.sofa_provider.pojo.User;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.zh.sofa_comm.service.*;
 
+import java.util.List;
+
 
 @RestController
-@ComponentScan(basePackages = {"com.zh.sofa_provider.mapper.UserMapper"})
+//@ComponentScan(basePackages = {"com.zh.sofa_provider.mapper.UserMapper"})
 public class Client {
     @SofaReference(binding = @SofaReferenceBinding(bindingType = "bolt"))
     private providerService providservice;
@@ -49,14 +52,9 @@ public class Client {
             return "ERROR";
         }
     }
-    @RequestMapping("/insert")
+    @GetMapping("/insert")
     public String insert(@Param("name") String name, @Param("age")int age,@Param("email") String email) {
-        try {
             providservice.InsertUser(name,age,email);
             return "Finish";
-        }catch (Exception e){
-            e.printStackTrace();
-            return "ERROR";
-        }
     }
 }

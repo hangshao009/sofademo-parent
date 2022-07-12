@@ -77,6 +77,18 @@
     <orderEntry type="library" name="Maven: com.alipay.sofa:sofa-ark-exception:1.1.5" level="project" />
     <orderEntry type="library" name="Maven: com.alipay.sofa:sofa-boot-autoconfigure:3.9.1" level="project" />
     <orderEntry type="module" module-name="sofa_comm" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-boot-starter:3.4.1" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus:3.4.1" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-extension:3.4.1" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-core:3.4.1" level="project" />
+    <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-annotation:3.4.1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jsqlparser:jsqlparser:3.2" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.5.6" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis-spring:2.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.3.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:3.4.5" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.2.13.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.2.13.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.alipay.sofa:healthcheck-sofa-boot-starter:3.9.1" level="project" />
     <orderEntry type="library" name="Maven: com.alipay.sofa:healthcheck-sofa-boot:3.9.1" level="project" />
     <orderEntry type="library" name="Maven: com.alipay.sofa:sofa-boot-actuator-autoconfigure:3.9.1" level="project" />

@@ -8,4 +8,6 @@ public interface providerService {
     public boolean InsertUser(String name,int age,String email);
     public boolean DeleteUserInfo(Long id);
     public Object getUserInfo(Long id);
+
+    public Object getProductInfo(Long id);
 }
