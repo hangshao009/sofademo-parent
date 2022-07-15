@@ -18,6 +18,7 @@ import java.util.List;
 public class Client {
     @SofaReference(binding = @SofaReferenceBinding(bindingType = "bolt"))
     private providerService providservice;
+
     @RequestMapping("/update")
     public String update(long id) {
         try {

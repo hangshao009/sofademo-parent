@@ -3,7 +3,7 @@
 <mapper namespace="com.zh.sofa_provider.mapper.ProductMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.zh.sofa_provider.pojo.Product">
+    <resultMap id="BaseResultMap" type="com.zh.sofa_comm.pojo.Product">
         <id column="id" property="id" />
         <result column="name" property="name" />
         <result column="price" property="price" />

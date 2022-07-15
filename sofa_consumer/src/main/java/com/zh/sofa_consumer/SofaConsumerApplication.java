@@ -10,5 +10,4 @@ public class SofaConsumerApplication {
     public static void main(String[] args) {
         SpringApplication.run(SofaConsumerApplication.class, args);
     }
-
 }

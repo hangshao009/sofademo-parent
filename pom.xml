@@ -10,6 +10,8 @@
     <modules>
         <module>sofa_consumer</module>
         <module>sofa_provider</module>
+        <module>producer</module>
+        <module>consumer</module>
     </modules>
     <packaging>pom</packaging>
     <groupId>com.ynu</groupId>
@@ -21,6 +23,12 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/io.seata/seata-spring-boot-starter -->
+        <dependency>
+            <groupId>io.seata</groupId>
+            <artifactId>seata-spring-boot-starter</artifactId>
+            <version>1.4.2</version>
+        </dependency>
         <dependency>
             <groupId>com.alipay.sofa</groupId>
             <artifactId>rpc-sofa-boot-starter</artifactId>

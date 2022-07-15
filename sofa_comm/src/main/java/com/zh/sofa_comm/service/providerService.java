@@ -1,6 +1,6 @@
 package com.zh.sofa_comm.service;
 
-import com.zh.sofa_comm.pojo.User;
+import com.zh.sofa_comm.pojo.Product;
 
 public interface providerService {
     public String UpdateUserInfo(Long id);
@@ -9,5 +9,6 @@ public interface providerService {
     public boolean DeleteUserInfo(Long id);
     public Object getUserInfo(Long id);
 
-    public Object getProductInfo(Long id);
+    public Product getProductInfo(Long id);
+    public void updateProduct(int id);
 }

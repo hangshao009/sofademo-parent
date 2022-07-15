@@ -1,6 +1,6 @@
 package com.zh.sofa_provider.mapper;
 
-import com.zh.sofa_provider.pojo.Product;
+import com.zh.sofa_comm.pojo.Product;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;

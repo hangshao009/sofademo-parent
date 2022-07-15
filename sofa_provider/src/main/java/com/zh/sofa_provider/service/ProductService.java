@@ -1,6 +1,6 @@
 package com.zh.sofa_provider.service;
 
-import com.zh.sofa_provider.pojo.Product;
+import com.zh.sofa_comm.pojo.Product;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
